@@ -31,6 +31,13 @@ const ToDo = () => {
                     <th>Task</th>
                 </tr>
             </thead>
+            <tbody>
+                {tasks.map((t,index) =>(
+                    <tr key={index}>
+                    <td>{t}</td>
+                </tr>
+                ))}
+            </tbody>
         </table>
         </>
     )
